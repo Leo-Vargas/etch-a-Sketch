@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(241, 241, 240);
   padding: 0;
   margin: 0;
 }
@@ -17,6 +17,68 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#bodyWrap{
+  display: flex;
+}
+
+#menu{
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-right: 150px;
+  margin-top: 50px;
+  height: 500px;
+  outline: 1px solid black;
+  border-radius: 10px;
+  align-items: center;
+}
+
+input[type='color']{
+  border: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+button{
+  font-size: 18px;
+  height: 40px;
+  width: 200px;
+  margin: 12px 20px 12px 20px;
+  outline: 1px solid black;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(241, 241, 240);
+  cursor: pointer;
+
+}
+
+button:hover{
+  box-shadow: 5px 5px 7px 2px rgba(0, 0, 0, 0.093);
+}
+
+.active{
+  background-color: black;
+  color: white;
+}
+
+#gridValue{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  margin: 10px 0px 15px 0px;
+  cursor: default;
+}
+
+input[type='range']{
+  width: 200px;
+  cursor: pointer;
+}
+
 #container{
   background-color: white;
   height: 700px;
@@ -29,8 +91,4 @@ body{
 
 .unit{
   user-select: none;
-}
-
-.active{
-  background-color: red;
 }
